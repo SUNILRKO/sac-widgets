@@ -1,0 +1,50 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.sample.cxometrics",
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTMgM2gydjE4SDNWM3ptNCAyaDE0djRIM3YtNGptMCA2aDEwdjRIN3YtNGptMCA2aDEydjRIN3YtNGoiLz48L3N2Zz4=",
+    "version": "1.0.0",
+    "name": "CXO Metrics Dashboard Widget",
+    "newInstancePrefix": "CxOMetrics",
+    "description": "A custom widget designed for multiple-dimension performance tracking.",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sample-cxometrics",
+        "url": "https://sunilrko.github.io/sac-widgets/CxOMetrics.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "width": {
+        "type": "integer",
+        "default": 400
+      },
+      "height": {
+        "type": "integer",
+        "default": 350
+      }
+    },
+    "methods": {},
+    "events": {},
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "Analysis Dimensions",
+            "type": "dimension",
+            "multiple": true
+          },
+          {
+            "id": "measures",
+            "description": "Key Performance Indicators",
+            "type": "mainStructureMember",
+            "multiple": true
+          }
+        ]
+      }
+    }
+}
